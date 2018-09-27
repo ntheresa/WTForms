@@ -1,0 +1,8 @@
+<h1> iTunes Artist Search </h1>
+<form action="{{ url_for('itunes_result') }}" method="POST">
+  {{ form.hidden_tag() }}
+  {{ form.artist.label }} {{ form.artist() }} <br>
+  {{ form.number_of_results.label }} {{ form.number_of_results() }} <br>
+  {{ form.email.label }} {{ form.email() }} <br>
+  {{ form.submit() }}
+</form>
